@@ -1,6 +1,7 @@
 #/bin/sh
 
-# Date: 2016-05-05
+# URL: https://ipfinder.io
+# Date: 2019-06-22
 # Version: 1.0.0
 # License: MIT
 # author: Mohamed Benrebia <mohamed@ipfinder.io>
