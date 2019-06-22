@@ -22,9 +22,29 @@ chmod +x install_requirement.sh
 ```bash
 chmod +x setup.sh
 ./setup
+ Do you want setup (y/n)?
+ Give your domain name to start setup (e.g. google.com, facebook.com)?fffffffff.io
+ ✓ You Domain >> fffffffff.io
+ ✓ You Domain API  >> http://api.fffffffff.io , http://ipfidner.fffffffff.io
+
 ```
 
+## Work php library
+[official PHP library for IPfinder](https://github.com/ipfinder-io/ip-finder-php) .
+Download the library and test it
 
+```php
+// via composer
+require  'vendor/autoload.php';
+
+$api = new ipfinder\ipfinder\IPfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.yourdomain.com');
+
+// anually
+require_once __DIR__.'autoloader.php';
+
+$api = new ipfinder\ipfinder\IPfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.yourdomain.com');
+
+```
 
 #### Configuration
 ```nginx
@@ -93,7 +113,7 @@ server {
     ......
 }
 ```
-> Only for ubuntu users
+> Only for debian and ubuntu users
 
 License
 ----
