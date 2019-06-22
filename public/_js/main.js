@@ -19,7 +19,7 @@ $(document).ready(function(f) {
     return JSON.stringify(a, null, 3).replace(/&/g, "&amp;").replace(/\\"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/^( *)("[\w]+": )?("[^"]*"|[\w.+-]*)?([,[{])?$/mg, b.json.replacer);
   }};
   $(".button").click(function() {
-    $.ajax({type:"POST", url:"http://ipfinder.fakedomain.io/v1/" + $("input[name='ipasn']").val(), data:{token:$("input[name='token']").val()}, error:function(a, b, c) {
+    $.ajax({type:"POST", url:"http://ipfinder."+location.host +"/v1/" + $("input[name='ipasn']").val(), data:{token:$("input[name='token']").val()}, error:function(a, b, c) {
       alert(b + " " + c);
     }, success:function(a) {
       console.log(a);
