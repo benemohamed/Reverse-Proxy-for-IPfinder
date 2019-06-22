@@ -56,13 +56,9 @@ setup () {
            echo -n  -e '%s\n' "$Red No input entered"
            exit 1
         else
-           echo "########################################################"
-           echo -n  -e "$Red ✓ You entered >> " "$Cyan $input_variable\n"
-           echo "########################################################"
            ## change to fakedomain.io
            # find ../nginx -type f -exec sed -i 's/$input_variable/fakedomain.io/g' {} \;
            find ../nginx -type f -exec sed -i "s/fakedomain.io/$input_variable/g" {} \;
-
            sudo cp ../nginx/sites-available/fakedomain.io /etc/nginx/sites-available/$input_variable
            sudo cp ../nginx/sites-available/ipfinder.fakedomain.io /etc/nginx/sites-available/ipfinder.$input_variable
            sudo ln -s /etc/nginx/sites-available/$input_variable /etc/nginx/sites-enabled/
@@ -70,12 +66,13 @@ setup () {
            sudo cp -R ../nginx/ipfinder.io/ /etc/nginx/
            sudo mkdir "/var/www/$input_variable" && sudo cp -R ../public/ /var/www/$input_variable/
            echo -n -e  "$Yellow ✓✓✓ setup Donne ✓✓✓\n"
-           echo -n -e  "$Yellow ✓✓✓ setup Donne ✓✓✓\n"
-           echo -n -e  "$Yellow ✓✓✓ setup Donne ✓✓✓\n"
+           echo "################################################################################################################"
+           echo -n  -e "$Red ✓ You Domain >> " "$Cyan http://$input_variable\n"
+           echo -n  -e "$Red ✓ You Domain API >> " "$Cyan http://api.$input_variable ,http://ipfinder.$input_variable \n"
+           echo "################################################################################################################"
            echo -n -e  "$Yellow ✓✓✓ setup Donne ✓✓✓\n"
 
         fi
-
     else
         echo -e "\n $Red No Bye "
     fi
