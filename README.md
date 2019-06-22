@@ -29,7 +29,7 @@ chmod +x setup.sh
 
 ```
 
-## Work php library
+## Work with php library
 [official PHP library for IPfinder](https://github.com/ipfinder-io/ip-finder-php) .
 Download the library and test it
 
