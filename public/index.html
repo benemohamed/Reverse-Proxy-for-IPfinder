@@ -1,0 +1,41 @@
+<!--
+# URL: https://ipfinder.io
+# Date: 2019-06-22
+# Version: 1.0.0
+# License: MIT
+# author: Mohamed Benrebia <mohamed@ipfinder.io>
+ -->
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Reverse Proxy for IPfinder API </title>
+      <link rel="stylesheet" type="text/css" href="_css/style.css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   </head>
+   <body>
+      <div class="bywho" style="background-image: -webkit-linear-gradient(-30deg,#24035b 0,#7533ed 49%,#2ca2d9 100%);color: #ffffff;">
+         By Mohamed Benrebia, <a href="https://ipfinder.io/docs/#getting-started">IPFinder documentation</a>
+      </div>
+      <div class="body-search" id="req">
+<!--          <textarea wrap="off" cols="30" rows="5" id="textarea">
+         </textarea> -->
+         <pre><code id=account></code></pre>
+         <button class="ret">Back</button>
+         <br>
+      </div>
+      <div class="body-search" id="hid">
+         <div >
+            <span class="offscreen"> lookup  IP address or ASN information</span><br>
+            <input type="text"  name="token" placeholder="Enter you API"><br><br>
+            <input type="text" name="ipasn" placeholder="Enter Valid IP address ,ASN number">
+            <br><br>
+            <center><button class ="button">submit</button></center>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="_js/main.min.js"></script>
+   </body>
+</html>
