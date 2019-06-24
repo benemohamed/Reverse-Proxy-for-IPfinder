@@ -1,6 +1,7 @@
 # Reverse Proxy for IPfinder API
 [Nginx] setup Nginx as a reverse proxy for IPfinder API
 
+### Install with  git
 ```bash
 git clone https://github.com/benemohamed/Reverse-Proxy-for-IPfinder.git
 cd  Reverse-Proxy-for-IPfinder
@@ -29,7 +30,7 @@ chmod +x setup.sh
 
 ```
 
-## Work php library
+## Work with php library
 [official PHP library for IPfinder](https://github.com/ipfinder-io/ip-finder-php) .
 Download the library and test it
 
@@ -115,6 +116,37 @@ server {
 ```
 > Only for debian and ubuntu users
 
+#### Test the API in the browser
+open You Domain >> fffffffff.io
+you will see the home
+![home](https://i.imgur.com/GmzUrAy.png)
+test free token
+![free token ipfinder](https://i.imgur.com/4PHwBRQ.png)
+test test with your TOKEN
+![your token ipfinder](https://i.imgur.com/vsNAIBm.png)
+test ASN number
+![test ASN number](https://i.imgur.com/5pQKSFc.png)
+
+test free api = free
+Enter the test free api and leave second input emty to get your IP address information
+
+
+
+#### Test the API with curl or httpie
+open your terminal
+
+```bash
+# api.fffffffff.io
+# ipfinder.fffffffff.io
+curl -XGET http:/ipfinder.fffffffff.io/v1/?token=free
+
+curl -XGET http:/ipfinder.fffffffff.io/v1/12.35.241.23?token=free
+
+```
+
+for more info read [IPFinder documentation](https://ipfinder.io/docs/#getting-started)
+
+
 License
 ----
-[MIT](LICENSE)
+[![GitHub license](https://img.shields.io/github/license/benemohamed/Reverse-Proxy-for-IPfinder.svg)](https://github.com/benemohamed/Reverse-Proxy-for-IPfinder/blob/master/LICENSE)
