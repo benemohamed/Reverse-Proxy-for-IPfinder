@@ -149,4 +149,5 @@ for more info read [IPFinder documentation](https://ipfinder.io/docs/#getting-st
 
 License
 ----
+
 [![GitHub license](https://img.shields.io/github/license/benemohamed/Reverse-Proxy-for-IPfinder.svg)](https://github.com/benemohamed/Reverse-Proxy-for-IPfinder/blob/master/LICENSE)
