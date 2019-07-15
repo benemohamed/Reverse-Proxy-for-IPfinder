@@ -47,7 +47,18 @@ $api = new ipfinder\ipfinder\IPfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.
 
 ```
 
+## Work with python library
+[official Python library for IPfinder](https://github.com/ipfinder-io/ip-finder-python) .
+Download the library and test it
+
+```python
+import ipfinder
+
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com')
+```
+
 #### Configuration
+
 ```nginx
 server {
     listen 80;
