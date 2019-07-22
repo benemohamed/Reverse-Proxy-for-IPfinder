@@ -57,6 +57,15 @@ import ipfinder
 config = ipfinder.config('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com')
 ```
 
+## Work with Node.js library
+[official Node.js library for IPfinder](https://github.com/ipfinder-io/ip-finder-node) .
+Download the library and test it
+
+```javascript
+const Ipfinder = require('ipfinder');
+const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.yourdomain.com');
+```
+
 #### Configuration
 
 ```nginx
