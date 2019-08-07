@@ -66,6 +66,16 @@ const Ipfinder = require('ipfinder');
 const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.yourdomain.com');
 ```
 
+
+## Work with Ruby library
+[official Ruby library for IPfinder](https://github.com/ipfinder-io/ip-finder-ruby) .
+Download the library and test it
+
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com')
+```
+
 #### Configuration
 
 ```nginx
