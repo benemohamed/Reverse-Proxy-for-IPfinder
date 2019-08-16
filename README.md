@@ -76,6 +76,16 @@ require 'ipfinder'
 config = Ipfinder::config('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com')
 ```
 
+## Work with Java library
+[official Java library for IPfinder](https://github.com/ipfinder-io/ip-finder-java) .
+Download the library and test it
+
+```java
+import io.ipfinder.api.Ipfinder;
+import io.ipfinder.api.exception.IPfinderException;
+Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com");
+```
+
 #### Configuration
 
 ```nginx
