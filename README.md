@@ -86,6 +86,16 @@ import io.ipfinder.api.exception.IPfinderException;
 Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com");
 ```
 
+## Work with Perl library
+[official Perl library for IPfinder](https://github.com/ipfinder-io/ip-finder-perl) .
+Download the library and test it
+
+```perl
+use IO::IPFinder;
+
+$ipfinder = IO::IPFinder->new('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com');
+```
+
 #### Configuration
 
 ```nginx
