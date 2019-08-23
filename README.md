@@ -85,6 +85,14 @@ import io.ipfinder.api.Ipfinder;
 import io.ipfinder.api.exception.IPfinderException;
 Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com");
 ```
+## Work with Java D
+[Official D client library for IPfinder](https://github.com/ipfinder-io/ip-finder-dlang) .
+Download the library and test it
+
+```d
+Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com");
+
+```
 
 ## Work with Perl library
 [official Perl library for IPfinder](https://github.com/ipfinder-io/ip-finder-perl) .
