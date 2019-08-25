@@ -104,6 +104,15 @@ use IO::IPFinder;
 $ipfinder = IO::IPFinder->new('YOUR_TOKEN_GOES_HERE','https://ipfinder.yourdomain.com');
 ```
 
+## Work with Lua library
+[official Lua library for IPfinder](https://github.com/ipfinder-io/ip-finder-lua) .
+Download the library and test it
+
+```lua
+local ipfinder = require('ipfinder')
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE", 'https://ipfinder.yourdomain.com')
+```
+
 #### Configuration
 
 ```nginx
