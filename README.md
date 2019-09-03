@@ -121,6 +121,14 @@ Download the library and test it
 conf <- Ipfinder(token="YOUR_TOKEN_GOES_HERE", baseUrl="https://ipfinder.yourdomain.com")
 ```
 
+## Work with elixir library
+[official elixir library for IPfinder](https://github.com/ipfinder-io/ip-finder-elixir) .
+Download the library and test it
+
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com")
+```
+
 #### Configuration
 
 ```nginx
