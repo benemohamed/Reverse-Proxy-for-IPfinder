@@ -113,6 +113,14 @@ local ipfinder = require('ipfinder')
 conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE", 'https://ipfinder.yourdomain.com')
 ```
 
+## Work with R library
+[official R library for IPfinder](https://github.com/ipfinder-io/ip-finder-rlang) .
+Download the library and test it
+
+```r
+conf <- Ipfinder(token="YOUR_TOKEN_GOES_HERE", baseUrl="https://ipfinder.yourdomain.com")
+```
+
 #### Configuration
 
 ```nginx
