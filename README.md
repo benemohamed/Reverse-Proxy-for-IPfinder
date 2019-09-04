@@ -129,6 +129,14 @@ Download the library and test it
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com")
 ```
 
+## Work with Swift library
+[official Swift library for IPfinder](https://github.com/ipfinder-io/ip-finder-swift) .
+Download the library and test it
+```swift
+import ipfinder
+let ipfinder = Ipfinder("YOUR_TOKEN_GOES_HERE", baseUrl:"https://ipfinder.yourdomain.com")
+```
+
 #### Configuration
 
 ```nginx
