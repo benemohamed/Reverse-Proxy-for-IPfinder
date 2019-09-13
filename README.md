@@ -137,6 +137,13 @@ import ipfinder
 let ipfinder = Ipfinder("YOUR_TOKEN_GOES_HERE", baseUrl:"https://ipfinder.yourdomain.com")
 ```
 
+## Work with Go library
+[official Go library for IPfinder](https://github.com/ipfinder-io/ip-finder-go) .
+Download the library and test it
+```go
+conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com")
+```
+
 #### Configuration
 
 ```nginx
