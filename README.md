@@ -143,6 +143,12 @@ Download the library and test it
 ```go
 conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "https://ipfinder.yourdomain.com")
 ```
+## Work with Dart library
+[official Dart library for IPfinder](https://github.com/ipfinder-io/ip-finder-dart) .
+Download the library and test it
+```dart
+Ipfinder ipfinder =  Ipfinder('YOUR_TOKEN_GOES_HERE', 'https://ipfinder.yourdomain.com');
+```
 
 #### Configuration
 
